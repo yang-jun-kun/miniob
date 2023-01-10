@@ -49,6 +49,17 @@ public:
       CLogManager *clog_manager);
 
   /**
+   * @brief 删除一个表
+   *
+   * @param path 元数据文件路径
+   * @param name 表名
+   * @param base_dir 表数据文件路径
+   * @param clog_manager clog管理器，用于维护redo log
+   * @return RC
+   */
+  RC drop(const char *name, CLogManager *clog_manager);
+
+  /**
    * 打开一个表
    * @param meta_file 保存表元数据的文件完整路径
    * @param base_dir 表所在的文件夹，表记录数据文件、索引数据文件存放位置
