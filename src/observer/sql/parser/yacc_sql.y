@@ -105,7 +105,6 @@ ParserContext *get_context(yyscan_t scanner)
         ON
         LOAD
         DATA
-		DATE
         INFILE
         EQ
         LT
